@@ -12,6 +12,7 @@
 		C996EA1F19B3EA310065B2EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C996EA1D19B3EA310065B2EB /* Main.storyboard */; };
 		C996EA2119B3EA310065B2EB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C996EA2019B3EA310065B2EB /* Images.xcassets */; };
 		C996EA2D19B3EA310065B2EB /* SignatureAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C996EA2C19B3EA310065B2EB /* SignatureAppTests.swift */; };
+		C996EA3719B3EA790065B2EB /* SignatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C996EA3619B3EA790065B2EB /* SignatureView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,7 @@
 		C996EA2619B3EA310065B2EB /* SignatureAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SignatureAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C996EA2B19B3EA310065B2EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C996EA2C19B3EA310065B2EB /* SignatureAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignatureAppTests.swift; sourceTree = "<group>"; };
+		C996EA3619B3EA790065B2EB /* SignatureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignatureView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 			children = (
 				C996EA1919B3EA310065B2EB /* AppDelegate.swift */,
 				C996EA1B19B3EA310065B2EB /* ViewController.swift */,
+				C996EA3619B3EA790065B2EB /* SignatureView.swift */,
 				C996EA1D19B3EA310065B2EB /* Main.storyboard */,
 				C996EA2019B3EA310065B2EB /* Images.xcassets */,
 				C996EA1719B3EA310065B2EB /* Supporting Files */,
@@ -209,6 +212,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C996EA1C19B3EA310065B2EB /* ViewController.swift in Sources */,
+				C996EA3719B3EA790065B2EB /* SignatureView.swift in Sources */,
 				C996EA1A19B3EA310065B2EB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
