@@ -10,14 +10,14 @@ import UIKit
 
 class SignatureView: UIView {
     // nil indicates that we need to move the pen
-    var tracers: CGPoint?[] = [nil]
+    var tracers: [CGPoint?] = [nil]
     
     override func drawRect(rect: CGRect) {
         let signature = UIBezierPath()
         var endLine = true
         
         for tracer in tracers {
-            if let tracer = tracer? {
+            if let tracer = tracer {
                 if endLine {
                     signature.moveToPoint(tracer)
                     endLine = false
@@ -34,23 +34,23 @@ class SignatureView: UIView {
         UIColor.blackColor().setStroke()
         signature.stroke()
     }
-    
-    override func touchesBegan(touches: NSSet!, withEvent event: UIEvent!) {
+
+    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
         tracers.append(nil)
         handleTouch(touches, withEvent: event)
     }
     
-    override func touchesMoved(touches: NSSet!, withEvent event: UIEvent!) {
+    override func touchesMoved(touches: Set<NSObject>, withEvent event: UIEvent) {
         handleTouch(touches, withEvent: event)
     }
     
-    override func touchesEnded(touches: NSSet!, withEvent event: UIEvent!) {
+    override func touchesEnded(touches: Set<NSObject>, withEvent event: UIEvent) {
         handleTouch(touches, withEvent: event)
         tracers.append(nil)
     }
     
-    func handleTouch(touches: NSSet!, withEvent event: UIEvent!) {
-        let touch: UITouch = touches.anyObject() as UITouch
+    func handleTouch(touches: Set<NSObject>, withEvent event: UIEvent!) {
+        let touch: UITouch = touches.first as! UITouch
         tracers.append(touch.locationInView(self))
         setNeedsDisplay()
     }
